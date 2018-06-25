@@ -16,10 +16,11 @@ const App = (props) => {
             component={Description}
           />
           <PublicRoute
-            path='/:action(view|edit|create)/:model(todos)/:model_id?/'
+            path='/:action(view|edit|create)/:model(todos)/:modelId?/'
             // path={'/todos/'}
             component={Demo}
           />
+          
         </Switch>
       </Body>
       <Footer />

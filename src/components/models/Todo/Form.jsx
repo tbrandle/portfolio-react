@@ -1,16 +1,15 @@
 import React from 'react'
-import { Form } from '../../'
-import { FieldContainer } from '../../../molecules'
-import { Title } from '../../../atoms'
+import { Form } from '../'
+import { FieldContainer } from '../../molecules'
+import { Title } from '../../atoms'
 
 /** ********** BASE COMPONENT **********/
 
-const TodoForm = ({ todo, formSubmit, model_name }) => {
-  const form = { title: "this is a title", description: "description", importance: "not very important" }
+const TodoForm = ({ todo, formSubmit, modelName }) => {
   return (
     <section>
-      <Title title={`Your ${model_name}`} />
-      <Form model={form} onSubmit={formSubmit}>
+      <Title title={`Your ${modelName}`} />
+      <Form model={todo} onSubmit={formSubmit}>
         <FieldContainer
           type={'text'}
           label={'Todo'}
@@ -21,7 +20,7 @@ const TodoForm = ({ todo, formSubmit, model_name }) => {
           type={'text'}
           label={'Description'}
           placeholder={'description here'}
-          name={'description'}
+          name={'content'}
         />
         <FieldContainer
           type={'select'}

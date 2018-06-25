@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { withEither } from '@bowtie/react-utils'
-import { Subtitle } from '../../../atoms'
-import { Todo } from '../../../molecules'
+import { Subtitle } from '../../atoms'
+import { ListItem } from './'
 
 /** ********** BASE COMPONENT **********/
 
@@ -13,13 +13,8 @@ const TodoList = ({ todoList = [], setTodo }) => {
         todoList.map((todo, i) => {
           const { title, content, favorite } = todo
           return (
-            <Link to={`${todo.id}`} key={`todo-item-${i}`}>
-              {/* <section className='todo-section' onClick={handler}>
-                <Favorite className='todo-item' favorite={favorite} />
-                <Subtitle title={title} />
-                <Summary content={content} />
-              </section> */}
-              <Todo key={`todo-${i}`} title={title} content={content} favorite={favorite} handler={() => setTodo(todo)} />
+            <Link to={`/view/todos/${todo.id}`} key={`todo-item-${i}`}>
+              <ListItem key={`todo-${i}`} title={title} content={content} favorite={favorite} handler={() => setTodo(todo)} />
             </Link>
           )
         })

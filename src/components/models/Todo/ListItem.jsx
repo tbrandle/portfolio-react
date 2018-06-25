@@ -5,7 +5,7 @@ import {
   Favorite
 } from '../../atoms'
 
-const Todo = ({ title, content, favorite = false, handler }) => {
+const TodoListItem = ({ title, content, favorite = false, handler }) => {
   return (
     <section className='todo-section' onClick={handler}>
       <Favorite className='todo-item' favorite={favorite} />
@@ -15,4 +15,4 @@ const Todo = ({ title, content, favorite = false, handler }) => {
   )
 }
 
-export default Todo
+export default TodoListItem
