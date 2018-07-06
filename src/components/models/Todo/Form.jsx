@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form } from '../'
+import { Form } from '../../organisms'
 import { FieldContainer } from '../../molecules'
 import { Title } from '../../atoms'
 
