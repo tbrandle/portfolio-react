@@ -1,7 +1,7 @@
-import Search from './Search'
 import Brand from './Brand'
-import Todo from './Todo'
 import EditModelButton from './EditModelButton'
 import FieldContainer from './Field'
+import Pagination from './Pagination'
+import Search from './Search'
 
-export { Search, Brand, FieldContainer, Todo, EditModelButton }
+export { Brand, EditModelButton, FieldContainer, Pagination, Search }

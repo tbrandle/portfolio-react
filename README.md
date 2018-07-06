@@ -1,31 +1,66 @@
-# react-houndstooth - EDITED
+Bowtie React + Recompose Starter Kit
+---
 
-GitHub file & collection editor by Bowtie.
+- [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Testing](#testing)
+  - [Linting](#linting)
+  - [Unit Tests](#unit-tests)
+- [Advanced](#advanced)
+  - [Local Environment](#local-environment)
+## Getting Started
 
-## Setup
+#### Requirements
+- Install [Yarn](https://yarnpkg.com/en/docs/install#mac-stable) `>= 1.5.0`
 
-*API Defaults to localhost:4000, [follow README for the api to get it running locally](https://github.com/bowtie-co/sls-houndstooth-api)*
-
-1. Clone this repo
+#### Installation
+- Install git `pre-push` hook
 ```bash
-git clone git@github.com:bowtie-co/react-houndstooth.git
-cd react-houndstooth/
+ln -s ../../bin/pre-push .git/hooks
 ```
 
-2. Copy dev environment
+- Install node_modules (using yarn)
 ```bash
-cp .env.development .env
+yarn install
 ```
 
-3. Install dependencies
+#### Usage
+
+- Start the React App
 ```bash
-npm install
+yarn start
 ```
 
-4. Run development server
+- [Visit local instance](http://localhost:3000)
+
+## Testing
+
+#### Linting
+
+- Just lint the code and show warnings
 ```bash
-npm start
+yarn lint
+```
+- Lint code and attempt to fix simple issues
+```bash
+yarn lint:fix
 ```
 
-5. Visit [http://localhost:3000](http://localhost:3000)
-  - *Should already be open after `npm start`*
+#### Unit Tests
+
+- Run ReactJS test suite (interactive)
+```bash
+yarn test
+```
+- Run ReactJS test suite (CI mode - not interactive)
+```bash
+CI=true app yarn test
+```
+
+## Advanced
+
+#### Local Environment
+
+- Create file `.env.development.local`, add entries to customize local dev
