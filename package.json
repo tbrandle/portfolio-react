@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@bowtie/api": "^0.3.0",
+    "@bowtie/api": "github:bowtie-co/node-api#accept-headers",
     "@bowtie/react-utils": "^0.1.1",
     "@bowtie/utils": "^0.3.0",
     "airbrake-js": "^1.1.2",
@@ -30,6 +30,7 @@
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
+    "j-toker": "^0.0.10-beta3",
     "libphonenumber-js": "^1.2.15",
     "moment": "^2.22.2",
     "node-sass": "^4.7.2",

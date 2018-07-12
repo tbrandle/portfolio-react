@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch } from 'react-router-dom'
 import { PublicRoute, Body } from '../../atoms'
-import { Description, Demo } from '../../ecosystems'
+import { Description, Demo, Login, Logout } from '../../ecosystems'
 import { Header, Footer } from '../../organisms'
 
 const App = (props) => {
@@ -10,6 +10,16 @@ const App = (props) => {
       <Header />
       <Body>
         <Switch>
+          <PublicRoute
+            props={props}
+            path='/login'
+            component={Login}
+          />
+          <PublicRoute
+            props={props}
+            path='/logout'
+            component={Logout}
+          />
           <PublicRoute
             props={props}
             path='/home'

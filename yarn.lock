@@ -16,9 +16,9 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@bowtie/api@^0.3.0":
+"@bowtie/api@github:bowtie-co/node-api#accept-headers":
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@bowtie/api/-/api-0.3.0.tgz#061c5958ba36b7de341b10cd86cb11fed9f32b3c"
+  resolved "https://codeload.github.com/bowtie-co/node-api/tar.gz/3cd574f7be129977af1e580c930f794b23f45b0f"
   dependencies:
     "@bowtie/utils" "^0.1.6"
     detect-node "^2.0.3"
@@ -4389,6 +4389,15 @@ istanbul-reports@^1.3.0:
   dependencies:
     handlebars "^4.0.3"
 
+j-toker@^0.0.10-beta3:
+  version "0.0.10-beta3"
+  resolved "https://registry.yarnpkg.com/j-toker/-/j-toker-0.0.10-beta3.tgz#37380689d5d7663e50b741be6c4639b1792d04e7"
+  dependencies:
+    jquery ">1.11.2"
+    jquery-deparam "^0.1.0"
+    jquery.cookie "^1.4.1"
+    pubsub-js "^1.5.2"
+
 jest-changed-files@^22.2.0:
   version "22.4.3"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-22.4.3.tgz#8882181e022c38bd46a2e4d18d44d19d90a90fb2"
@@ -4661,6 +4670,18 @@ jest@^22.4.0:
   dependencies:
     import-local "^1.0.0"
     jest-cli "^22.4.4"
+
+jquery-deparam@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/jquery-deparam/-/jquery-deparam-0.1.0.tgz#eaa60c1699fab7637d1acb8d2a08c72d095a0b96"
+
+jquery.cookie@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/jquery.cookie/-/jquery.cookie-1.4.1.tgz#d63dce209eab691fe63316db08ca9e47e0f9385b"
+
+jquery@>1.11.2:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.4.5"
@@ -6491,6 +6512,10 @@ pubnub@^4.21.2:
     lil-uuid "^0.1.1"
     superagent "^3.8.1"
     superagent-proxy "^1.0.2"
+
+pubsub-js@^1.5.2:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/pubsub-js/-/pubsub-js-1.6.0.tgz#232d36485ce7905a54629ec5783d9f6f4c638026"
 
 punycode@1.3.2:
   version "1.3.2"
