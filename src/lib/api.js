@@ -3,17 +3,20 @@ import airbrake from './airbrake'
 import storage from './storage'
 import notifier from './notifier'
 import parseLinkHeader from 'parse-link-header'
+import Auth from './jToker'
 
 const api = new Api({
   root: process.env.REACT_APP_API_ROOT_URL,
   version: process.env.REACT_APP_API_VERSION,
   secureOnly: process.env.NODE_ENV !== 'development',
   verbose: process.NODE_ENV !== 'production',
-  authorization: 'Bearer'
+  authorization: 'Custom'
 })
 
 api.authorize({
-  token: () => storage.get('access_token')
+  headers: () => Auth.retrieveData('authHeaders'),
+  validate: () => Auth.user.signedIn
+  // token: () => storage.get('access_token')
 })
 
 const handleApiUnauthorized = (resp) => {

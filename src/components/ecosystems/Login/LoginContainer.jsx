@@ -7,7 +7,7 @@ import Login from './Login'
 import { Loading } from '../../atoms'
 import Auth from '../../../lib/jToker'
 import withForm from '../../../helpers/withForm'
-// import api from '../../../lib/api'
+import api from '../../../lib/api'
 // import notifier from '../../../lib/notifier'
 
 // conditional functions here:
@@ -31,6 +31,11 @@ export const enhance = compose(
         .then((user) => {
           setIsComponentLoading(false)
           console.log(user)
+
+          api.get('todos')
+            .then(console.log)
+            .catch(console.error)
+
           history.push('/home')
         })
         .catch(resp => {
