@@ -33,7 +33,7 @@ module.exports = {
     'lib': path.resolve(__dirname, '../src/lib'),
     'Routes': path.resolve(__dirname, '../src/Routes'),
     'scss': path.resolve(__dirname, '../src/scss'),
-    'root': path.resolve(__dirname, '../src')
+    'src': path.resolve(__dirname, '../src')
   },
   plugins: [
     // Prevents users from importing files from outside of src/ (or node_modules/).
