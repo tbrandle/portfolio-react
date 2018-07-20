@@ -22,10 +22,6 @@
 
 ## Checklist:
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
-<!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
-- [ ] My code follows the code style of this project.
-- [ ] My change requires a change to the documentation.
-- [ ] I have updated the documentation accordingly.
 - [ ] I have added appropriate label(s) to this PR.
 - [ ] I have assigned this PR to the person resposible for these changes. (usually you!)
-- [ ] I have requested at least one reviewer to review this PR.
+- [ ] I have requested at least one person to review this PR.
