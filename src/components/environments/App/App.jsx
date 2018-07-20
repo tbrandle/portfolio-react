@@ -12,13 +12,8 @@ const App = (props) => {
         <Switch>
           <PublicRoute
             props={props}
-            path='/login'
-            component={Login}
-          />
-          <PublicRoute
-            props={props}
-            path='/logout'
-            component={Logout}
+            path='/:action(login|logout)/'
+            component={Auth}
           />
           <PublicRoute
             props={props}

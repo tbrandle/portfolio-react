@@ -1,7 +1,7 @@
-import Auth from '../../../lib/jToker'
+import auth from 'lib/auth'
 
 const Logout = ({ history }) => {
-  Auth.signOut()
+  auth.logout()
     .then(resp => {
       console.log('Signed Out')
       history.push('/login')

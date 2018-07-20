@@ -18,10 +18,6 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <PublicRoute
-          path='/(callback|redirect|login|logout)'
-          component={AuthContainer}
-        />
-        <PublicRoute
           props={{ featureList }}
           path='/'
           component={AppContainer}

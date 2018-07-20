@@ -1,15 +1,15 @@
-import { Auth as jtAuth } from 'j-toker';
-jtAuth.configure({
+const Auth = require('j-toker')
+Auth.configure({
   apiUrl: `${process.env.REACT_APP_API_ROOT_URL}/${process.env.REACT_APP_API_VERSION}`
 })
 
-class Auth {
+class jtAuth {
   login(formData) {
-    return jtAuth.emailSignIn(formData)
+    return Auth.emailSignIn(formData)
   }
 
   logout() {
-    jtAuth.signOut()
+    Auth.signOut()
     .then(resp => {
       console.log('Signed Out')
     })
@@ -19,14 +19,15 @@ class Auth {
   }
 
   signedIn() {
-    return jtAuth.user.signed()
+    console.log(Auth.user.signedIn)
+    return Auth.user.signedIn
   }
 
   authHeaders() {
-    return jtAuth.retrieveData('authHeaders')
+    return Auth.retrieveData('authHeaders')
   }
 }
 
-const auth = new Auth()
+const auth = new jtAuth()
 
 export default auth
