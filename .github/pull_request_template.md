@@ -23,5 +23,5 @@
 ## Checklist:
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 - [ ] I have added appropriate label(s) to this PR.
-- [ ] I have assigned this PR to the person resposible for these changes. (usually you!)
+- [ ] I have assigned this PR to the person responsible for these changes. (usually you!)
 - [ ] I have requested at least one person to review this PR.
