@@ -1,6 +1,28 @@
 Bowtie React + Recompose Starter Kit
 ---
 
+## Quick Start
+
+#### Run full setup
+
+```bash
+make setup
+```
+
+#### Start service(s)
+
+```bash
+make start
+```
+
+#### Full rebuild
+
+```bash
+make rebuild
+```
+
+## Contents
+
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Installation](#installation)
@@ -10,6 +32,7 @@ Bowtie React + Recompose Starter Kit
   - [Unit Tests](#unit-tests)
 - [Advanced](#advanced)
   - [Local Environment](#local-environment)
+
 ## Getting Started
 
 #### Requirements
