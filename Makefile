@@ -18,6 +18,12 @@ up:
 	npm start
 
 test:
+	npm test
+
+ci-install:
+	npm ci
+
+ci-test:
 	CI=true npm test
 
-ci: test
+ci: ci-install ci-test
