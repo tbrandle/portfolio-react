@@ -36,7 +36,9 @@ make rebuild
 ## Getting Started
 
 #### Requirements
-- Install [Yarn](https://yarnpkg.com/en/docs/install#mac-stable) `>= 1.5.0`
+- Install [npm](https://nodejs.org/en/download/) `>= 6.2.0`
+- If you already have npm and Node.js globaly installed, you can run this command to upgrade to the latest stable version:
+`npm install -g npm@latest`
 
 #### Installation
 - Install git `pre-push` hook
@@ -44,16 +46,16 @@ make rebuild
 ln -s ../../bin/pre-push .git/hooks
 ```
 
-- Install node_modules (using yarn)
+- Install node_modules (using npm)
 ```bash
-yarn install
+npm install
 ```
 
 #### Usage
 
 - Start the React App
 ```bash
-yarn start
+npm start
 ```
 
 - [Visit local instance](http://localhost:3000)
@@ -64,22 +66,22 @@ yarn start
 
 - Just lint the code and show warnings
 ```bash
-yarn lint
+npm run lint
 ```
 - Lint code and attempt to fix simple issues
 ```bash
-yarn lint:fix
+npm run lint:fix
 ```
 
 #### Unit Tests
 
 - Run ReactJS test suite (interactive)
 ```bash
-yarn test
+npm test
 ```
 - Run ReactJS test suite (CI mode - not interactive)
 ```bash
-CI=true app yarn test
+CI=true app npm test
 ```
 
 ## Advanced
