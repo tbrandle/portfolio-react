@@ -1,21 +1,21 @@
 import React from 'react'
-import { PublicRoute } from '../../atoms'
-import Login from './LoginContainer'
-import Logout from './Logout'
+import { PublicRoute } from 'atoms'
+import { LoginForm } from 'organisms'
 
 const Auth = (props) => {
-  console.log('rendering Demo')
+  const { handleLogout } = props
+  console.log('rendering Auth')
   return (
     <div className='demo-template'>
       <PublicRoute
         props={props}
         path={'/login'}
-        component={Login}
+        component={LoginForm}
       />
       <PublicRoute
         props={props}
         path={'/logout'}
-        component={Logout}
+        component={() => handleLogout()}
       />
     </div>
   )
