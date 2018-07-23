@@ -3,7 +3,7 @@ import airbrake from './airbrake'
 import storage from './storage'
 import notifier from './notifier'
 import parseLinkHeader from 'parse-link-header'
-import auth from './auth'
+import { auth } from './'
 
 const api = new Api({
   root: process.env.REACT_APP_API_ROOT_URL,

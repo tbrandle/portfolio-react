@@ -1,7 +1,7 @@
 import React from 'react'
-import TimePicker from 'rc-time-picker'
+import TimePicker from 'rc-time-picker/lib'
 import moment from 'moment'
-import { FormGroup } from '../../../atoms'
+import { FormGroup } from 'atoms'
 import 'rc-time-picker/assets/index.css'
 
 const TimePickerField = ({ id, name, value, onChange, ...rest }) => {
