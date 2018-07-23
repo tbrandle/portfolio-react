@@ -4,7 +4,6 @@ import { LoginForm } from 'organisms'
 
 const Auth = (props) => {
   const { handleLogout, handleLoginSubmit } = props
-  console.log('rendering Auth')
   return (
     <div className='demo-template'>
       <PublicRoute

@@ -29,15 +29,14 @@ export const enhance = compose(
     },
     handleLogout: ({ history }) => () => {
       console.log('logged out')
-      return null
-      // auth.logout()
-      //   .then(resp => {
-      //     console.log('Signed Out')
-      //     history.push('/login')
-      //   })
-      //   .catch(resp => {
-      //     console.log('Error Signed Out')
-      //   })
+      auth.logout()
+        .then(resp => {
+          console.log('Signed Out')
+          history.push('/login')
+        })
+        .catch(resp => {
+          console.log('Error Signed Out')
+        })
     }
   }),
   withEither(loadingConditionFn, Loading)
