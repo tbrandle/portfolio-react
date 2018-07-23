@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@bowtie/api": "github:bowtie-co/node-api#accept-headers",
+    "@bowtie/api": "^0.4.0",
     "@bowtie/react-utils": "^0.1.1",
     "@bowtie/utils": "^0.3.0",
     "airbrake-js": "^1.1.2",
