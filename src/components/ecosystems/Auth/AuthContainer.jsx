@@ -17,18 +17,18 @@ export const enhance = compose(
       setIsComponentLoading(true)
 
       auth.login(formData)
-      .then((user) => {
-        setIsComponentLoading(false)
-        console.log(user)
-        history.push('/home')
-      })
-      .catch(resp => {
-        setIsComponentLoading(false)
-        console.log(resp)
-      })
+        .then((user) => {
+          setIsComponentLoading(false)
+          console.log(user)
+          history.push('/home')
+        })
+        .catch(resp => {
+          setIsComponentLoading(false)
+          console.log(resp)
+        })
     },
     handleLogout: ({ history }) => () => {
-      console.log('logged out');
+      console.log('logged out')
       return null
       // auth.logout()
       //   .then(resp => {
@@ -44,4 +44,3 @@ export const enhance = compose(
 )
 
 export default enhance(Auth)
-

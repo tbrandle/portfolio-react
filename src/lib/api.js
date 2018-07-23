@@ -1,5 +1,5 @@
 import Api from '@bowtie/api'
-import airbrake from './airbrake'
+// import airbrake from './airbrake'
 import storage from './storage'
 import notifier from './notifier'
 import parseLinkHeader from 'parse-link-header'

@@ -11,8 +11,8 @@ const Header = (props) => {
       <div className='nav-bar'>
         <NavLink path={'/home'} title={'Description'} />
         {
-          auth.signedIn() 
-            ? <NavLink path={'/logout'} title={'logout'} /> 
+          auth.signedIn()
+            ? <NavLink path={'/logout'} title={'logout'} />
             : <NavLink path={'/login'} title={'Login'} />
         }
         <NavLink path={'/view/todos/'} title={'Demo - todo app'} />

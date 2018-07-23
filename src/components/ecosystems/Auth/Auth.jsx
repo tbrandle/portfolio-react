@@ -10,7 +10,7 @@ const Auth = (props) => {
       <PublicRoute
         props={{ handleLoginSubmit }}
         path={'/login'}
-        component={LoginForm}        
+        component={LoginForm}
       />
       <PublicRoute
         path={'/logout'}

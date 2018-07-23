@@ -4,9 +4,9 @@ import Footer from './Footer'
 import Form from './Form'
 import LoginForm from './LoginForm'
 
-export { 
-  Header, 
-  Footer, 
+export {
+  Header,
+  Footer,
   Form,
-  LoginForm 
+  LoginForm
 }
