@@ -75,10 +75,10 @@
     "standard": "^11.0.1"
   },
   "scripts": {
-    "preinstall": "node -e \"if (process.env.npm_execpath.indexOf('yarn') === -1) { console.log('\u001b[31mPlease use yarn for installing\u001b[0m'); process.exit(1); }\"",
+    "preinstall": "node -e \"if (process.env.npm_execpath.indexOf('npm') === -1) { console.log('\u001b[31mPlease use npm for installing\u001b[0m'); process.exit(1); }\"",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "pretest": "yarn lint",
+    "pretest": "npm run lint",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "standard",
     "lint:fix": "standard --fix"

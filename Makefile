@@ -9,15 +9,15 @@ clean:
 	rm -rf node_modules
 
 install:
-	yarn install
+	npm install
 
 build: rebuild
-	yarn build
+	npm run build
 
 up:
-	yarn start
+	npm start
 
 test:
-	CI=true yarn test
+	CI=true npm test
 
 ci: test
