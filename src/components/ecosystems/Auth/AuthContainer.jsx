@@ -1,10 +1,13 @@
 // Containers should include all logic that enhances a component
 // this includes any reduce methods, recompose, or middleware.
 
+import Auth from './Auth'
 import { compose, withState, withHandlers } from 'recompose'
 import { withEither } from '@bowtie/react-utils'
-import Auth from './Auth'
+import { auth } from 'lib'
 import { Loading } from 'atoms'
+
+const loadingConditionFn = ({ isComponentLoading }) => isComponentLoading
 
 export const enhance = compose(
   withState('isComponentLoading', 'setIsComponentLoading', false),
@@ -26,6 +29,7 @@ export const enhance = compose(
     },
     handleLogout: ({ history }) => () => {
       console.log('logged out');
+      return null
       // auth.logout()
       //   .then(resp => {
       //     console.log('Signed Out')
