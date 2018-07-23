@@ -115,12 +115,12 @@
       "^environments[/]?(.*)": "<rootDir>/src/components/environments/$1",
       "^molecules[/]?(.*)": "<rootDir>/src/components/molecules/$1",
       "^organisms[/]?(.*)": "<rootDir>/src/components/organisms/$1",
-      "^components[/]?(.*)": "<rootDir>/src/components/components/$1",
-      "^helpers[/]?(.*)": "<rootDir>/src/helpers/components/$1",
-      "^lib[/]?(.*)": "<rootDir>/src/lib/components/$1",
-      "^Routes[/]?(.*)": "<rootDir>/src/Routes/components/$1",
-      "^scss[/]?(.*)": "<rootDir>/src/scss/components/$1",
-      "^src[/]?(.*)": "<rootDir>/src/src/components/$1"
+      "^components[/]?(.*)": "<rootDir>/src/components/$1",
+      "^helpers[/]?(.*)": "<rootDir>/src/helpers/$1",
+      "^lib[/]?(.*)": "<rootDir>/src/lib/$1",
+      "^Routes[/]?(.*)": "<rootDir>/src/Routes/$1",
+      "^scss[/]?(.*)": "<rootDir>/src/scss/$1",
+      "^src[/]?(.*)": "<rootDir>/src/src/$1"
     },
     "moduleFileExtensions": [
       "web.js",
