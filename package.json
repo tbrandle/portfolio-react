@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@bowtie/api": "^0.4.0",
+    "@bowtie/api": "^0.4.1",
     "@bowtie/react-utils": "^0.1.1",
     "@bowtie/utils": "^0.3.0",
     "airbrake-js": "^1.1.2",
@@ -116,6 +116,7 @@
       "^environments[/]?(.*)": "<rootDir>/src/components/environments/$1",
       "^molecules[/]?(.*)": "<rootDir>/src/components/molecules/$1",
       "^organisms[/]?(.*)": "<rootDir>/src/components/organisms/$1",
+      "^models[/]?(.*)": "<rootDir>/src/components/models/$1",
       "^components[/]?(.*)": "<rootDir>/src/components/$1",
       "^helpers[/]?(.*)": "<rootDir>/src/helpers/$1",
       "^lib[/]?(.*)": "<rootDir>/src/lib/$1",
