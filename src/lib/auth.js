@@ -3,31 +3,25 @@ Auth.configure({
   apiUrl: `${process.env.REACT_APP_API_ROOT_URL}/${process.env.REACT_APP_API_VERSION}`
 })
 
-class jtAuth {
-  login(formData) {
+class JTAuth {
+  login (formData) {
     return Auth.emailSignIn(formData)
   }
 
-  logout() {
-    Auth.signOut()
-    .then(resp => {
-      console.log('Signed Out')
-    })
-    .catch(resp => {
-      console.error('Error Signed Out')
-    })
+  logout () {
+    return Auth.signOut()
   }
 
-  signedIn() {
+  signedIn () {
     console.log(Auth.user.signedIn)
     return Auth.user.signedIn
   }
 
-  authHeaders() {
+  authHeaders () {
     return Auth.retrieveData('authHeaders')
   }
 }
 
-const auth = new jtAuth()
+const auth = new JTAuth()
 
 export default auth

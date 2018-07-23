@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch } from 'react-router-dom'
 import { PublicRoute, Body } from '../../atoms'
-import { Description, Demo, Login, Logout } from '../../ecosystems'
+import { Description, Demo, Auth } from '../../ecosystems'
 import { Header, Footer } from '../../organisms'
 
 const App = (props) => {

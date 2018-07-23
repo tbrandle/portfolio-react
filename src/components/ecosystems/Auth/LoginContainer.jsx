@@ -11,7 +11,6 @@ const loadingConditionFn = ({ isComponentLoading }) => isComponentLoading
 
 export const enhance = compose(
   withState('isComponentLoading', 'setIsComponentLoading', false),
-  withEither(loadingConditionFn, Loading),
   withHandlers({
     formSubmit: ({ setIsComponentLoading, history }) => (formData) => {
       console.log('formData', formData)
@@ -28,7 +27,8 @@ export const enhance = compose(
           console.log(resp)
         })
     }
-  })
+  }),
+  withEither(loadingConditionFn, Loading)
 
 )
 

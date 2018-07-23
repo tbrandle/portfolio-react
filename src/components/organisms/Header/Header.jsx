@@ -8,7 +8,7 @@ const Header = (props) => {
   Auth.configure({
     apiUrl: 'http://localhost/v1'
   })
-  console.log("Auth defined", Auth.user.signedIn)
+  console.log('Auth defined', Auth.user.signedIn)
   console.log(auth.signedIn())
   return (
     <section className='top-nav-section' >
