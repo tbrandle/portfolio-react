@@ -37,13 +37,14 @@ const handleApiError = (resp) => {
     errorTitle = resp.data.message
   }
 
-  airbrake.notify({
-    error: new Error(`API ${severity}: ${errorTitle}`),
-    context: {
-      severity,
-      resp
-    }
-  })
+  // airbrake.notify({
+  //   error: new Error(`API ${severity}: ${errorTitle}`),
+  //   context: {
+  //     severity,
+  //     resp
+  //   }
+  // })
+  console.error(`API ${severity}: ${errorTitle}`)
 }
 
 // Attach handlers to event emitter by string event name
