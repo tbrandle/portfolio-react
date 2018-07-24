@@ -4,7 +4,6 @@ import { NavLink } from 'atoms'
 import { auth } from 'lib'
 
 const Header = (props) => {
-  console.log(auth.signedIn())
   return (
     <section className='top-nav-section' >
       <Brand title={'Welcome to Bowtie\'s React-Recompose Starter Kit'} />
