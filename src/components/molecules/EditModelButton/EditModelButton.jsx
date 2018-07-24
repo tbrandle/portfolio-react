@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   Button
-} from '../../atoms'
+} from 'atoms'
 
 const EditModelButton = ({ label, modelName, modelId }) => {
   return (

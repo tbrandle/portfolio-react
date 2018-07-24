@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import { AppContainer, AuthContainer } from 'environments'
+import { AppContainer } from 'environments'
 import { Switch, PublicRoute } from 'atoms'
 
 const featureList = [
@@ -17,10 +17,6 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <PublicRoute
-          path='/(callback|redirect|login|logout)'
-          component={AuthContainer}
-        />
         <PublicRoute
           props={{ featureList }}
           path='/'

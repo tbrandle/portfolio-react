@@ -3,7 +3,7 @@ import {
   BowtieLogo,
   ReactLogo,
   Title
-} from '../../atoms'
+} from 'atoms'
 
 const Brand = ({ title }) => {
   return (

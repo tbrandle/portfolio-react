@@ -1,6 +1,6 @@
 import React from 'react'
-import { Todo } from '../../models'
-import { PublicRoute, Switch } from '../../atoms'
+import { Todo } from 'models'
+import { PublicRoute, Switch } from 'atoms'
 
 const Demo = ({ todoList, todo, setTodo, formSubmit, modelName }) => {
   console.log('rendering Demo')

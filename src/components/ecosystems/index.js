@@ -11,5 +11,6 @@
 
 import Description from './Description'
 import Demo from './Demo'
+import Auth from './Auth'
 
-export { Description, Demo }
+export { Description, Demo, Auth }

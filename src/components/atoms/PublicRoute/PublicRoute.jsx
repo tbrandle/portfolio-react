@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 const PublicRoute = ({ props: passedProps, path, component: Component, ...rest }) => {
   console.log('PublicRoute props: ', passedProps)
+
   return (
     <Route
       {...rest}

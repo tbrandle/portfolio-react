@@ -1,6 +1,6 @@
 import React from 'react'
 import { Input } from 'reactstrap'
-import { FormGroup } from '../../../atoms'
+import { FormGroup } from 'atoms'
 
 const Checkbox = ({ id, ...rest }) => {
   return (

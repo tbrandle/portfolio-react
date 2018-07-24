@@ -1,19 +1,22 @@
 import Api from '@bowtie/api'
-import airbrake from './airbrake'
+// import airbrake from './airbrake'
 import storage from './storage'
 import notifier from './notifier'
 import parseLinkHeader from 'parse-link-header'
+import { auth } from './'
 
 const api = new Api({
   root: process.env.REACT_APP_API_ROOT_URL,
   version: process.env.REACT_APP_API_VERSION,
   secureOnly: process.env.NODE_ENV !== 'development',
   verbose: process.NODE_ENV !== 'production',
-  authorization: 'Bearer'
+  authorization: 'Custom'
 })
 
 api.authorize({
-  token: () => storage.get('access_token')
+  headers: () => auth.authHeaders(),
+  validate: () => auth.signedIn()
+  // token: () => storage.get('access_token')
 })
 
 const handleApiUnauthorized = (resp) => {
@@ -34,13 +37,14 @@ const handleApiError = (resp) => {
     errorTitle = resp.data.message
   }
 
-  airbrake.notify({
-    error: new Error(`API ${severity}: ${errorTitle}`),
-    context: {
-      severity,
-      resp
-    }
-  })
+  // airbrake.notify({
+  //   error: new Error(`API ${severity}: ${errorTitle}`),
+  //   context: {
+  //     severity,
+  //     resp
+  //   }
+  // })
+  console.error(`API ${severity}: ${errorTitle}`)
 }
 
 // Attach handlers to event emitter by string event name
