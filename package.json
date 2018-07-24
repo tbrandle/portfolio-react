@@ -87,6 +87,7 @@
     "lint:fix": "standard --fix"
   },
   "jest": {
+    "browser": true,
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
