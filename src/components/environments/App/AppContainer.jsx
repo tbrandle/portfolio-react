@@ -17,6 +17,6 @@ export const enhance = compose(
   withForm,
   withRouter,
   withMaybe(nullConditionFn),
-  withEither(loadingConditionFn, Loading),
+  withEither(loadingConditionFn, Loading)
 )
 export default enhance(App)

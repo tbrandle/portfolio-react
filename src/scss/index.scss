@@ -1,7 +1,6 @@
 @import './reset.scss';
 @import './variables.scss';
 @import './environments/App.scss';
-@import './ecosystems/Description.scss';
 @import './ecosystems/ecosystems.scss';
 @import './organisms/Header.scss';
 @import './organisms/Footer.scss';
@@ -55,4 +54,9 @@
 
 .side-column-right{
   border-left: 2px lightgrey solid;
+}
+
+.active {
+  border-bottom: 1px blue solid;
+  color: black;
 }

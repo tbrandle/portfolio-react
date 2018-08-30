@@ -1,11 +1,16 @@
 import React from 'react'
-import Particles from 'react-particles-js';
+import Particles from 'react-particles-js'
 import deer from './deer.svg'
+import { Body, Row, Col } from 'atoms'
 
 const About = (props) => {
   return (
-    <section>
-      About
+    <Body className='about-section'>
+      <Row>
+        <Col>
+          About
+        </Col>
+      </Row>
       {/* <Particles
         params={{
           particles: {
@@ -18,7 +23,7 @@ const About = (props) => {
             }
           }
         }} /> */}
-      </section>
+    </Body>
   )
 }
 

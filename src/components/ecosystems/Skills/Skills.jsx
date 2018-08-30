@@ -1,12 +1,12 @@
 import React from 'react'
-// import { PublicRoute, Switch } from 'atoms'
+import { Body } from 'atoms'
 
-const Skills = ({ todoList, todo, setTodo, formSubmit, modelName }) => {
+const Skills = (props) => {
   console.log('rendering Skills')
   return (
-    <div className='skills-template'>
+    <Body className='skills-section'>
       Skills
-    </div>
+    </Body>
   )
 }
 

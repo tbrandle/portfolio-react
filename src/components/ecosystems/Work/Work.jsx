@@ -1,12 +1,12 @@
 import React from 'react'
-import { PublicRoute, Switch } from 'atoms'
+import { PublicRoute, Switch, Body } from 'atoms'
 
 const Work = (props) => {
   console.log('rendering Work')
   return (
-    <div className='work-template'>
+    <Body className='work-section'>
       Work
-    </div>
+    </Body>
   )
 }
 

@@ -15,8 +15,9 @@
       text-decoration: none;
       cursor: pointer;
       color: grey;
+      transition: color .5s;
       &:hover {
-        background-color: lightgrey;
+        color: black;
       }
     }
     .avatar-menu {

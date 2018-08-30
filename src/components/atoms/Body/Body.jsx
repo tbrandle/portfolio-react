@@ -1,9 +1,9 @@
 import React from 'react'
 import { Col, Row, Container } from 'atoms'
 
-const Body = ({ children }) => {
+const Body = ({ children, ...rest }) => {
   return (
-    <Container fluid>
+    <Container fluid {...rest}>
       <Col className='body-template'>
         <Row>
           { children }
