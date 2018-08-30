@@ -2,9 +2,10 @@ import React from 'react'
 import Particles from 'react-particles-js';
 import deer from './deer.svg'
 
-const Description = ({ featureList, formOnChange, ...rest }) => {
+const About = (props) => {
   return (
     <section>
+      About
       {/* <Particles
         params={{
           particles: {
@@ -21,4 +22,4 @@ const Description = ({ featureList, formOnChange, ...rest }) => {
   )
 }
 
-export default Description
+export default About

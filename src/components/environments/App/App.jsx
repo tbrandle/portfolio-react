@@ -1,7 +1,7 @@
 import React from 'react'
 import Drilldown from 'react-router-drilldown'
 import { PublicRoute, Body } from 'atoms'
-import { Description, Demo, Auth } from 'ecosystems'
+import { Home, About, Skills, Work } from 'ecosystems'
 import { Header, Footer } from 'organisms'
 
 const App = (props) => {
@@ -12,20 +12,24 @@ const App = (props) => {
         <Drilldown>
           <PublicRoute
             props={props}
-            path='/:action(login|logout)/'
-            component={Auth}
-          />
+            path='/home'
+            component={Home}
+            />
           <PublicRoute
             props={props}
-            path='/home'
-            component={Description}
-          />
+            path='/about'
+            component={About}
+            />
           <PublicRoute
-            path='/:action(view|edit|create)/:model(todos)/:modelId?/'
-            // path={'/todos/'}
-            component={Demo}
+            props={props}
+            path='/skills'
+            component={Skills}
+            />
+          <PublicRoute
+            props={props}
+            path='/work'
+            component={Work}
           />
-
         </Drilldown>
       </Body>
       <Footer />

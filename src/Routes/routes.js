@@ -3,22 +3,11 @@ import { BrowserRouter } from 'react-router-dom'
 import { AppContainer } from 'environments'
 import { Switch, PublicRoute } from 'atoms'
 
-const featureList = [
-  'react router',
-  'recompose',
-  'scss loaders',
-  'Bowtie React utilities',
-  'Bowtie Api helper',
-  'Bowtie React file structure',
-  'jest-enzyme library'
-]
-
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
         <PublicRoute
-          props={{ featureList }}
           path='/'
           component={AppContainer}
         />

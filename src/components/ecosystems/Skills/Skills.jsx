@@ -1,35 +1,13 @@
 import React from 'react'
-import { Todo } from 'models'
-import { PublicRoute, Switch } from 'atoms'
+// import { PublicRoute, Switch } from 'atoms'
 
-const Demo = ({ todoList, todo, setTodo, formSubmit, modelName }) => {
-  console.log('rendering Demo')
+const Skills = ({ todoList, todo, setTodo, formSubmit, modelName }) => {
+  console.log('rendering Skills')
   return (
-    <div className='demo-template'>
-      <PublicRoute
-        props={{ todoList, setTodo }}
-        path={'/(view|edit|create)/todos'}
-        component={Todo.List}
-      />
-      <Switch>
-        <PublicRoute
-          props={{ todo }}
-          path={'/view/todos/:modelId'}
-          component={Todo.Single}
-        />
-        <PublicRoute
-          props={{ todo, formSubmit, modelName }}
-          path={'/edit/todos/:modelId'}
-          component={Todo.Form}
-        />
-        <PublicRoute
-          props={{ todo, formSubmit }}
-          path={'/create/todos/'}
-          component={Todo.Form}
-        />
-      </Switch>
+    <div className='skills-template'>
+      Skills
     </div>
   )
 }
 
-export default Demo
+export default Skills

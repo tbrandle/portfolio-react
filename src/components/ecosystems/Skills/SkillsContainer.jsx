@@ -3,7 +3,7 @@
 
 import { compose, withState, withHandlers } from 'recompose'
 import { withEither } from '@bowtie/react-utils'
-import Demo from './Demo'
+import Skills from './Skills'
 import { Loading } from 'atoms'
 // import { api, notifier } from 'lib'
 
@@ -55,4 +55,4 @@ export const enhance = compose(
 
 )
 
-export default enhance(Demo)
+export default enhance(Skills)

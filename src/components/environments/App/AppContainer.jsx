@@ -18,8 +18,5 @@ export const enhance = compose(
   withRouter,
   withMaybe(nullConditionFn),
   withEither(loadingConditionFn, Loading),
-  withHandlers({
-    mapFeatures: ({ featureList }) => () => featureList.map((feature, i) => <li className='list-item' key={`feature-${i}`}>{feature}</li>)
-  })
 )
 export default enhance(App)
