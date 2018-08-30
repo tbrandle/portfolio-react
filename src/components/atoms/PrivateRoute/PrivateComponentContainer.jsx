@@ -5,25 +5,25 @@ import { compose, withState, withProps, lifecycle } from 'recompose'
 import { withEither } from '@bowtie/react-utils'
 import PrivateComponent from './PrivateComponent'
 import LoginRedirect from './LoginRedirect'
-import { auth, storage } from 'lib'
+import { storage } from 'lib'
 
 /** *** conditional functions here: *****/
 
-const unauthenticatedConditionFn = () => !auth.isAuthenticated()
+const unauthenticatedConditionFn = ({ user }) => !user.signedIn
 
 export const enhance = compose(
   withRouter,
-  withProps(({ component, action, roles }) => {
-    if (component && action) {
-      console.error('Please either pass an action or a component into PrivateRoute, not both.')
+  withProps(({ component, routerAction, roles }) => {
+    if (component && routerAction) {
+      console.error('Please either pass an routerAction or a component into PrivateRoute, not both.')
     }
 
-    const actionAsComponent = () => {
-      action()
+    const routerActionAsComponent = () => {
+      routerAction()
       return null
     }
 
-    const newComponent = action ? actionAsComponent : component
+    const newComponent = routerAction ? routerActionAsComponent : component
     return {
       component: newComponent,
       roles: roles || []

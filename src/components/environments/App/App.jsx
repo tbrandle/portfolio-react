@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch } from 'react-router-dom'
+import Drilldown from 'react-router-drilldown'
 import { PublicRoute, Body } from 'atoms'
 import { Description, Demo, Auth } from 'ecosystems'
 import { Header, Footer } from 'organisms'
@@ -9,7 +9,7 @@ const App = (props) => {
     <section className='app'>
       <Header />
       <Body>
-        <Switch>
+        <Drilldown>
           <PublicRoute
             props={props}
             path='/:action(login|logout)/'
@@ -26,7 +26,7 @@ const App = (props) => {
             component={Demo}
           />
 
-        </Switch>
+        </Drilldown>
       </Body>
       <Footer />
     </section>

@@ -3,8 +3,8 @@ import { Route } from 'react-router'
 import PropTypes from 'prop-types'
 
 const PublicRoute = ({ props: passedProps, path, component: Component, ...rest }) => {
+  console.log('PublicRoute path: ', path)
   console.log('PublicRoute props: ', passedProps)
-
   return (
     <Route
       {...rest}

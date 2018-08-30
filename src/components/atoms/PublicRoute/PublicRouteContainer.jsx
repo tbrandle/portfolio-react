@@ -5,17 +5,17 @@ import PublicRoute from './PublicRoute'
 import { compose, withProps } from 'recompose'
 
 export const enhance = compose(
-  withProps(({ component, action }) => {
-    if (component && action) {
-      console.error('Please either pass an action or a component into PublicRoute, not both.')
+  withProps(({ component, routerAction }) => {
+    if (component && routerAction) {
+      console.error('Please either pass an routerAction or a component into PublicRoute, not both.')
     }
 
-    const actionAsComponent = () => {
-      action()
+    const routerActionAsComponent = () => {
+      routerAction()
       return null
     }
 
-    const newComponent = action ? actionAsComponent : component
+    const newComponent = routerAction ? routerActionAsComponent : component
     return { component: newComponent }
   })
 )

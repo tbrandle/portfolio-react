@@ -1,0 +1,13 @@
+form {
+  label {
+    display: block;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .form-check {
+    padding-left: 0;
+  }
+}
