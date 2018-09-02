@@ -1,0 +1,22 @@
+// Containers should include all logic that enhances a component
+// this includes any reduce methods, recompose, or middleware.
+
+import React from 'react'
+import { withRouter } from 'react-router'
+import { compose, withHandlers } from 'recompose'
+import { withEither, withMaybe } from '@bowtie/react-utils'
+import withForm from 'helpers/withForm'
+import Pages from './Pages'
+import { Loading } from 'atoms'
+
+// conditional functions here:
+const nullConditionFn = (props) => !props
+const loadingConditionFn = (props) => props.isLoading
+
+export const enhance = compose(
+  withForm,
+  withRouter,
+  withMaybe(nullConditionFn),
+  withEither(loadingConditionFn, Loading)
+)
+export default enhance(Pages)

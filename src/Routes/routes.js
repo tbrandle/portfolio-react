@@ -5,6 +5,7 @@ import { Switch, PublicRoute } from 'atoms'
 
 const Routes = () => {
   return (
+    <section>
     <BrowserRouter>
       <Switch>
         <PublicRoute
@@ -13,6 +14,7 @@ const Routes = () => {
         />
       </Switch>
     </BrowserRouter>
+    </section>
   )
 }
 

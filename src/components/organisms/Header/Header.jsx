@@ -2,16 +2,15 @@ import React from 'react'
 import { Brand } from 'molecules'
 import { NavLink, Nav, Row } from 'atoms'
 
-const Header = (props) => {
-  const { location } = props
+const Header = ({ match: { params } }) => {
   return (
     <section className='top-nav-section' >
       <Nav className='nav-bar'>
         <Row>
-          <NavLink path={'/home'} title={'Home'} active={location['pathname'] === '/home'} />
-          <NavLink path={'/about'} title={'About'} active={location['pathname'] === '/about'} />
-          <NavLink path={'/skills'} title={'Skills'} active={location['pathname'] === '/skills'} />
-          <NavLink path={'/work'} title={'Work'} active={location['pathname'] === '/work'} />
+          <NavLink path={'/home'} title={'Home'} active={params['page'] === 'home'} />
+          <NavLink path={'/about'} title={'About'} active={params['page'] === 'about'} />
+          <NavLink path={'/skills'} title={'Skills'} active={params['page'] === 'skills'} />
+          <NavLink path={'/work'} title={'Work'} active={params['page'] === 'work'} />
         </Row>
       </Nav>
     </section>

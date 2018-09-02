@@ -5,7 +5,9 @@ const Work = (props) => {
   console.log('rendering Work')
   return (
     <Body className='work-section'>
-      Work
+      <section className='hero-section'>
+        Work.
+      </section>
     </Body>
   )
 }
