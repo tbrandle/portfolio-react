@@ -6,14 +6,14 @@ import { Switch, PublicRoute } from 'atoms'
 const Routes = () => {
   return (
     <section>
-    <BrowserRouter>
-      <Switch>
-        <PublicRoute
-          path='/'
-          component={AppContainer}
-        />
-      </Switch>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Switch>
+          <PublicRoute
+            path='/'
+            component={AppContainer}
+          />
+        </Switch>
+      </BrowserRouter>
     </section>
   )
 }

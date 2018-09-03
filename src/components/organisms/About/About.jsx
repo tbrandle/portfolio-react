@@ -9,7 +9,7 @@ const About = (props) => {
       <section className='hero-section'>
           About.
       </section>
-     </Body>
+    </Body>
   )
 }
 

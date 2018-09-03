@@ -9,9 +9,9 @@ import Work from './Work'
 import Home from './Home'
 
 export {
-  About, 
-  Skills, 
-  Work, 
+  About,
+  Skills,
+  Work,
   Home,
   Header,
   Footer,
