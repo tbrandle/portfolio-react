@@ -70,24 +70,52 @@
   justify-content: center;
   align-items: center;
   transition: all 2s;
+  border-bottom: 3px magenta solid;
 }
 
 
+.page{
+  transition: all .4s;
+  transform: scale(1)  
+}
+.page-enter {
+  // background-color: magenta;
 
-.example-enter {
-  opacity: 0.01;
+  // opacity: 0.01;
+  // transform: scale(0.9) translateY(50%);
+  transform: scale(2)
+}
+.page-enter-active {
+  // background-color: blue;
+  transform: scale(2)
+
+  // opacity: 1;
+  // transform: scale(1) translateY(0%);
+  // transition: all 300ms ease-out;
+}
+.page-exit {
+  // background-color: green;
+  transform: scale(2)
+  // opacity: 1;
+  // transform: scale(1) translateY(0%);
+}
+.page-exit-active {
+  // background-color: orange;
+  transform: scale( 2)
+  
+  // opacity: 0.01;
+  // transform: scale(0.9) translateY(50%);
+  // transition: all 300ms ease-out;
 }
 
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 3s ease-in;
+.home{
+  transition: all .6s 'ease';
+  color:black;
 }
 
-.example-leave {
-  opacity: 1;
+.fade-in {
+  color: blue;
 }
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+.fade-out {
+  color: magenta;
 }

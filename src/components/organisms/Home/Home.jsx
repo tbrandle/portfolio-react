@@ -1,20 +1,40 @@
 import React from 'react'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import { CSSTransition } from 'react-transition-group';
+import TrackVisibility from 'react-on-screen';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { PublicRoute, Switch, Body } from 'atoms'
 
-const Home = (props) => {
+const Home = ({ show, toggleShow, page }) => {
   return (
-    <ReactCSSTransitionGroup
-      transitionName='example'
-      transitionEnterTimeout={500}
-      transitionLeaveTimeout={300}
-    >
-      <Body key={Date.now()} className='home-section'>
-        <section className='hero-section'>
-          Home.
-        </section>
-      </Body>
-    </ReactCSSTransitionGroup>
+    <Body  className='home-section'>        
+            <TrackVisibility partialVisibility offset={-700}>
+      {/* <CSSTransition
+            in={show}
+            timeout={300}
+            classNames="page"
+            onEnter={() => console.log("onEnter")}
+            onEntering={() => console.log("onEntering")}
+            onEntered={() => console.log('onEntered')}
+            onExit={() => console.log("onExit")}
+            onExiting={() => console.log("onExiting")}
+            unmountOnExit
+          > */}
+          {
+            ({ isVisible }) => {
+              return (
+                <section key={Date.now()} className={`hero-section home`}>
+                  <p  className={`home-p-tag ${isVisible ? 'fade-in' : `fade-out`}`}>
+                    Home.
+                  </p>
+                </section>
+                
+              )
+            }
+          }
+          </TrackVisibility>
+        {/* </CSSTransition> */}
+        </Body>
+
   )
 }
 
