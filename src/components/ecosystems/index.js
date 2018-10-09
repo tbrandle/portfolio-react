@@ -1,3 +1,3 @@
-import Pages from './Pages'
+import PagesController from './PagesController'
 
-export { Pages }
+export { PagesController }

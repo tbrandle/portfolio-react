@@ -11,6 +11,7 @@ import ExtLink from './ExtLink'
 import NavLink from './NavLink'
 import Modal from './Modal'
 import ModalBody from './ModalBody'
+import Tooltip from './Tooltip'
 
 import Link from './Link'
 import Icon from './Icon'
@@ -42,6 +43,7 @@ export {
   NavLink,
   Modal,
   ModalBody,
+  Tooltip,
   Icon,
   Link,
   Subtitle,

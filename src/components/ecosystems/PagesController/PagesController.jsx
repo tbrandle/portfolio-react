@@ -1,9 +1,10 @@
 import React from 'react'
 import Drilldown from 'react-router-drilldown'
 import { PublicRoute, Body } from 'atoms'
-import { Header, Footer, Home, About, Skills, Work } from 'organisms'
+import { Home, About, Skills, Work } from 'pages'
+import { Header, Footer } from 'organisms'
 
-const Pages = (props) => {
+const PagesController = (props) => {
   return (
     <section>
       <Header />
@@ -37,4 +38,4 @@ const Pages = (props) => {
   )
 }
 
-export default Pages
+export default PagesController

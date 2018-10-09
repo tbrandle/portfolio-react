@@ -28,7 +28,7 @@ module.exports = {
     'environments': path.resolve(__dirname, '../src/components/environments'),
     'molecules': path.resolve(__dirname, '../src/components/molecules'),
     'organisms': path.resolve(__dirname, '../src/components/organisms'),
-    'models': path.resolve(__dirname, '../src/components/models'),
+    'pages': path.resolve(__dirname, '../src/components/pages'),
     'components': path.resolve(__dirname, '../src/components'),
     'helpers': path.resolve(__dirname, '../src/helpers'),
     'lib': path.resolve(__dirname, '../src/lib'),

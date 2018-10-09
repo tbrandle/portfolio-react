@@ -8,17 +8,17 @@ import Home from './Home'
 export const enhance = compose(
   withStateHandlers({
     show: false
-  },{
+  }, {
     toggleShow: () => (payload) => ({ show: payload })
   }),
   lifecycle({
-    componentDidMount(){
+    componentDidMount () {
       this.props.toggleShow(true)
     },
-    componentWillUnmount(){
+    componentWillUnmount () {
       this.props.toggleShow(false)
 
-      console.log("HOME UNMOUNTED")
+      console.log('HOME UNMOUNTED')
     }
   })
 )
