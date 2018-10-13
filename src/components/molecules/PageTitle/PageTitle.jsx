@@ -8,7 +8,7 @@ const PageTitle = ({ title }) => {
   return (
     <div>
       <Icon /><Icon />
-      
+
     </div>
   )
 }

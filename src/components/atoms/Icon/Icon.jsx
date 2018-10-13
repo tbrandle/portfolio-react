@@ -1,8 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faGhost,
+  faAngleDoubleRight,
+  faAngleDoubleLeft,
+  faAngleDoubleDown,
+  faAngleDoubleUp
+} from '@fortawesome/free-solid-svg-icons'
 import {
   Tooltip
 } from 'atoms'
+
+library.add(faGhost, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp)
 
 const Icon = ({ className, size = 'xs', fill = true, iconName, color, id, tooltip, ...rest }) => {
   const sizes = {
@@ -18,8 +29,8 @@ const Icon = ({ className, size = 'xs', fill = true, iconName, color, id, toolti
 
   const faClass = className || `fa${fill ? 's' : 'r'} fa-${iconName}`
   return (
-    <div className='fa-icon-sm'>
-      <i className={`${faClass} fa-${sizes[size]}`} style={{ 'color': color }} id={tooltipId} />
+    <div className={`fa-icon ${size}`}>
+      <FontAwesomeIcon icon={iconName} size={sizes[size]} color={color} />
       {
         tooltip &&
         <Tooltip target={tooltipId} {...rest}>
