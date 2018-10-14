@@ -6,3 +6,49 @@
 .homescreen-row {
   margin-top: 111px;
 }
+
+.hero-section {
+  
+  font-size: 80px;
+  color: white;
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  // transition: all 2s;
+  position: relative;
+  .dino{
+    position: absolute;
+    right: 3%;
+    top: 29%;
+        width: 37%;
+    min-width: 377px;
+    max-width: 460px;
+  }
+  .trooper {
+    position: absolute;
+    left: 14%;
+    bottom: 109px;
+  }
+  .bear {
+    position: absolute;
+    left: -3%;
+    top: 32%;
+    min-width: 304px;
+    width: 44%;
+    max-width: 400px;
+  }
+  .tent {
+    position: absolute;
+    bottom: 6%;
+    right: -4%;
+    width: 75%;
+    max-width: 686px;
+    min-width: 586px;
+  }
+}
+
+.first-section {
+  margin-top: 177px;
+}

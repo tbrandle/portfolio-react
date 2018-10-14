@@ -20,21 +20,23 @@ const About = ({ page }) => {
         <img src={dino} alt='dinosaur' className='dino' />
         <img src={stormTroopers} alt='storm trooper' className='trooper' />
       </section>
-
-      <Row id='0'>
-        <Col sm='6'>[IMAGE HERE]</Col>
-        <Col sm='6'>
-          <p>
+      <section class='first-section'>
+        <Row>
+          <Col sm='6'>[IMAGE HERE]</Col>
+          <Col sm='6'>
+            <p>
             Hello world, my name is Tim Brandle!
-          </p>
-          <p>
+            </p>
+            <p>
             I am a Software Developer based out of Denver, CO. I specialize in Frontend Development, with some experience in Backend. As a developer, my goal is to create applications that are organized, modular, scalable, and well tested. The ability to create anything that comes to mind is fascinating to me and has instilled a drive for continuous learning of new technologies, frameworks, and design principles.
-          </p>
-          <p>
+            </p>
+            <p>
             Simply put, I like to make things and make them well. Outside of work I enjoy rock climbing, mountain biking, road biking, camping, drinking coffee, brewing beer, and traveling.
-          </p>
-        </Col>
-      </Row>
+            </p>
+          </Col>
+        </Row>
+
+      </section>
     </Body>
   )
 }

@@ -1,9 +1,14 @@
 .footer-section{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  border-top: 2px lightgrey solid;
+    background-image: url(/static/media/footer_trees.e15f5818.png);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 24px;
+    height: 354px;
+    background-size: contain;
+    margin-top: 182px;
+    background-size: contain;
+
   .copyright{
     color: white;
   }

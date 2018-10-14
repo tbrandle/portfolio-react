@@ -60,38 +60,6 @@
   color: black;
 }
 
-.hero-section {
-  font-size: 80px;
-  color: white;
-  width: 100vw;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  transition: all 2s;
-  position: relative;
-  .dino{
-    position: absolute;
-    right: 3%;
-    top: 29%;
-  }
-  .trooper {
-    position: absolute;
-    left: 14%;
-    bottom: 109px;
-  }
-  .bear {
-    position: absolute;
-    left: 3%;
-    top: 38%;
-  }
-  .tent {
-    position: absolute;
-
-    bottom: 6%;
-    right: -4%;
-  }
-}
 
 .navigation-section {
   .right {
@@ -123,15 +91,15 @@
 }
 
 
-.page{
-  transition: all .4s;
-  transform: scale(1)  
-}
+// .page{
+//   transition: all .4s;
+//   transform: scale(1)  
+// }
 
-.home{
-  transition: all .6s 'ease';
-  color:black;
-}
+// .home{
+//   transition: all .6s 'ease';
+//   color:black;
+// }
 
 .fade-in {
   color: blue;

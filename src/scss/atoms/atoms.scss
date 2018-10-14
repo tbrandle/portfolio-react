@@ -15,19 +15,25 @@
 }
 
 .title-wrapper{
+  .closing-tags{
+    font-size: 114px;
+    font-weight: 600;
+    text-shadow: 3px 6px 67px rgba(0, 0, 0, 0.3);
+  }
   .page-title {
     font-size: 114px;
     color: rgba(88,88,88,.67);
     font-weight: 600;
     text-shadow: 3px 6px 67px rgba(0, 0, 0, 0.3);
   }
-  span{
-    font-size: 114px;
-    font-weight: 600;
-    text-shadow: 3px 6px 67px rgba(0, 0, 0, 0.3);
-  }
-  .pagetitle.software-developer {
+  
+}
+.title-wrapper.software-developer {
+  .page-title {
     font-size: 73px;
+  }
+  span.closing-tags{
+    font-size: 76px;
   }
 }
 
