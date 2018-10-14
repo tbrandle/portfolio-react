@@ -7,13 +7,23 @@ import {
   faAngleDoubleRight,
   faAngleDoubleLeft,
   faAngleDoubleDown,
-  faAngleDoubleUp
+  faAngleDoubleUp,
+  faAngleRight,
+  faAngleLeft
 } from '@fortawesome/free-solid-svg-icons'
 import {
   Tooltip
 } from 'atoms'
 
-library.add(faGhost, faAngleDoubleRight, faAngleDoubleLeft, faAngleDoubleDown, faAngleDoubleUp)
+library.add(
+  faGhost,
+  faAngleDoubleRight,
+  faAngleDoubleLeft,
+  faAngleDoubleDown,
+  faAngleDoubleUp,
+  faAngleRight,
+  faAngleLeft
+)
 
 const Icon = ({ className, size = 'xs', fill = true, iconName, color, id, tooltip, ...rest }) => {
   const sizes = {

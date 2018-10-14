@@ -1,14 +1,14 @@
 import React from 'react'
 import { withRouter } from 'react-dom'
+import navRight from 'images/double-right-arrows-angles.svg'
 import {
   Icon
 } from 'atoms'
 
-const NavArrows = ({ dir = 'right', handleClick }) => {
+const NavArrows = ({ dir = 'right', handleClick, children }) => {
   return (
     <div onClick={handleClick}>
-      <Icon iconName={`caret`} />
-      {/* <Icon className={`fas fa-angle-double-${dir}`} /> */}
+      <img src={navRight} />
     </div>
   )
 }

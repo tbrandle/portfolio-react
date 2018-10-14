@@ -31,6 +31,7 @@ module.exports = {
     'pages': path.resolve(__dirname, '../src/components/pages'),
     'components': path.resolve(__dirname, '../src/components'),
     'helpers': path.resolve(__dirname, '../src/helpers'),
+    'images': path.resolve(__dirname, '../src/images'),
     'lib': path.resolve(__dirname, '../src/lib'),
     'Routes': path.resolve(__dirname, '../src/Routes'),
     'scss': path.resolve(__dirname, '../src/scss'),

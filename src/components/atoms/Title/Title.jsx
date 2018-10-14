@@ -1,8 +1,13 @@
 import React from 'react'
+import { Icon } from 'atoms'
 
-const Title = ({ title, children }) => {
+const Title = ({ children }) => {
   return (
-    <h1>{title || children}</h1>
+    <section className='flex-row'>
+      {/* <Icon iconName='angle-left'/> */}
+      <span className='secondary-color'>{'<'}</span><p className={`page-title primary-text-color`}>{children}</p>  <span className='secondary-color'> {'/>'} </span>
+      {/* <Icon iconName='angle-right'/> */}
+    </section>
   )
 }
 
