@@ -1,7 +1,7 @@
 import React from 'react'
 import Drilldown from 'react-router-drilldown'
 import { PublicRoute, Body } from 'atoms'
-import { Home, About, Skills, Work } from 'pages'
+import { Home, About, Contact, Work } from 'pages'
 import { Header, Footer } from 'organisms'
 
 const PagesController = (props) => {
@@ -25,13 +25,13 @@ const PagesController = (props) => {
         />
         <PublicRoute
           props={props}
-          path='/skills'
-          component={Skills}
+          path='/work'
+          component={Work}
         />
         <PublicRoute
           props={props}
-          path='/work'
-          component={Work}
+          path='/contact'
+          component={Contact}
         />
       </Drilldown>
     </section>

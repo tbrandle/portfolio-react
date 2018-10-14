@@ -9,7 +9,7 @@ const Header = ({ match: { params } }) => {
         <Row>
           <NavLink path={'/home'} title={'Home'} active={params['page'] === 'home'} />
           <NavLink path={'/about'} title={'About'} active={params['page'] === 'about'} />
-          <NavLink path={'/skills'} title={'Skills'} active={params['page'] === 'skills'} />
+          <NavLink path={'/contact'} title={'Contact'} active={params['page'] === 'contact'} />
           <NavLink path={'/work'} title={'Work'} active={params['page'] === 'work'} />
         </Row>
       </Nav>

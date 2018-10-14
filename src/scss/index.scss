@@ -7,8 +7,7 @@
 @import './organisms/TodoList.scss';
 @import './organisms/TodoDetail.scss';
 @import './organisms/Form.scss';
-@import './molecules/search.scss';
-@import './molecules/todo.scss';
+@import './molecules/molecules.scss';
 @import './atoms/buttons.scss';
 @import './atoms/atoms.scss';
 
@@ -70,6 +69,57 @@
   justify-content: center;
   align-items: center;
   transition: all 2s;
+  position: relative;
+  .dino{
+    position: absolute;
+    right: 3%;
+    top: 29%;
+  }
+  .trooper {
+    position: absolute;
+    left: 14%;
+    bottom: 109px;
+  }
+  .bear {
+    position: absolute;
+    left: 3%;
+    top: 38%;
+  }
+  .tent {
+    position: absolute;
+
+    bottom: 6%;
+    right: -4%;
+  }
+}
+
+.navigation-section {
+  .right {
+    position: absolute;
+    z-index: 10;
+    right: 4px;
+    top: 52%;
+    height: 136px;
+  }
+  .left {
+    position: absolute;
+    z-index: 10;
+    left: 4px;
+    top: 52%;
+    transform: rotate(180deg);
+    height: 136px;
+
+  }
+  .down {
+    position: absolute;
+    z-index: 10;
+       bottom: -29px;
+    right: 46%;
+    transform: rotate(90deg);
+    height: 151px;
+
+
+  }
 }
 
 
@@ -99,5 +149,5 @@
 }
 
 .primary-text-color {
-  color: #585858
+  color: rgba(88,88,88,.67)
 }

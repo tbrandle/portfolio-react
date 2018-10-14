@@ -1,5 +1,5 @@
 import Brand from './Brand'
-import NavArrows from './NavArrows'
+import NavArrow from './NavArrow'
 import EditModelButton from './EditModelButton'
 import Pagination from './Pagination'
 import PageTitle from './PageTitle'
@@ -9,5 +9,5 @@ export {
   EditModelButton,
   Pagination,
   PageTitle,
-  NavArrows
+  NavArrow
 }

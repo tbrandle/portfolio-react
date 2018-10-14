@@ -13,7 +13,7 @@ const App = (props) => {
         <Switch>
           <PublicRoute
             props={props}
-            path='/:page(skills|about|work|home)'
+            path='/:page(contact|about|work|home)'
             component={PagesController}
           />
           <Redirect to={'/home'} />

@@ -7,21 +7,21 @@ import {
   Row,
   Col
 } from 'atoms'
-import { NavArrows } from 'molecules'
+import { Navigation } from 'organisms'
 
-const Home = () => {
+const Home = ({ page }) => {
   return (
     <Body className='home-section'>
       <section className={`hero-section home`}>
+        <Navigation page={page} />
         <Row className='homescreen-row'>
           <Col sm='12' className='flex-column flex-center'>
             <img src={laptop} className='homescreen-image' />
           </Col>
           <Col sm='12' className='flex-column flex-center'>
-            <Title>software<span className='secondary-color'>.</span>developer</Title>
+            <Title className='software-developer'>software<span className='secondary-color'>.</span>developer</Title>
           </Col>
         </Row>
-        <NavArrows />
       </section>
     </Body>
   )

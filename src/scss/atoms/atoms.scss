@@ -14,9 +14,21 @@
   margin: 6px;
 }
 
-.page-title {
-  color: #585858;
-  font-weight: 600;
+.title-wrapper{
+  .page-title {
+    font-size: 114px;
+    color: rgba(88,88,88,.67);
+    font-weight: 600;
+    text-shadow: 3px 6px 67px rgba(0, 0, 0, 0.3);
+  }
+  span{
+    font-size: 114px;
+    font-weight: 600;
+    text-shadow: 3px 6px 67px rgba(0, 0, 0, 0.3);
+  }
+  .pagetitle.software-developer {
+    font-size: 73px;
+  }
 }
 
 .homescreen-image {

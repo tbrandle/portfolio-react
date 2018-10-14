@@ -6,7 +6,7 @@ import { withRouter } from 'react-router'
 import { compose, withPropsOnChange, withState, withStateHandlers, lifecycle, withHandlers } from 'recompose'
 import { withEither, withMaybe } from '@bowtie/react-utils'
 import withForm from 'helpers/withForm'
-import NavArrows from './NavArrows'
+import NavArrow from './NavArrow'
 import { Loading } from 'atoms'
 
 // conditional functions here:
@@ -16,9 +16,7 @@ const loadingConditionFn = (props) => props.isLoading
 export const enhance = compose(
   withRouter,
   withHandlers({
-    handleClick: ({ dir, history, match }) => () => {
-      const { page } = match.params
-      const currentIndex = pagesList.indexOf(page)
+    handleClick: ({ dir, page, history, location }) => () => {
       const pagesList = [
         'home',
         'about',
@@ -26,10 +24,12 @@ export const enhance = compose(
         'contact'
       ]
 
-      dir === 'right'
-        ? history.push(`/${pagesList[currentIndex + 1]}`)
-        : history.push(`/${pagesList[currentIndex - 1]}`)
+      const currentIndex = pagesList.indexOf(page)
+
+      dir === 'right' && history.push(`/${pagesList[currentIndex + 1]}`)
+      dir === 'left' && history.push(`/${pagesList[currentIndex - 1]}`)
+      // dir === 'down' && history.push(`/${location.pathname}/#0`)
     }
   })
 )
-export default enhance(NavArrows)
+export default enhance(NavArrow)
