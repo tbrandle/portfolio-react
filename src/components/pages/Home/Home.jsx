@@ -16,7 +16,7 @@ const Home = ({ page }) => {
         <Navigation page={page} />
         <Row className='homescreen-row'>
           <Col sm='12' className='flex-column flex-center'>
-            <img src={laptop} className='homescreen-image' />
+            <img src={laptop} className='laptop' />
           </Col>
           <Col sm='12' className='flex-column flex-center'>
             <Title className='software-developer'>software<span className='secondary-color'>.</span>developer</Title>

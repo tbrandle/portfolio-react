@@ -2,11 +2,7 @@
 @import './variables.scss';
 @import './environments/App.scss';
 @import './ecosystems/ecosystems.scss';
-@import './organisms/Header.scss';
-@import './organisms/Footer.scss';
-@import './organisms/TodoList.scss';
-@import './organisms/TodoDetail.scss';
-@import './organisms/Form.scss';
+@import './organisms/organisms.scss';
 @import './molecules/molecules.scss';
 @import './atoms/buttons.scss';
 @import './atoms/atoms.scss';
@@ -29,6 +25,10 @@
   flex-direction: column;
 }
 
+.flex {
+  display: flex;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -40,6 +40,9 @@
 
 .space-around {
   justify-content: space-around;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 
 .flex-center {
@@ -61,45 +64,6 @@
 }
 
 
-.navigation-section {
-  .right {
-    position: absolute;
-    z-index: 10;
-    right: 4px;
-    top: 52%;
-    height: 136px;
-  }
-  .left {
-    position: absolute;
-    z-index: 10;
-    left: 4px;
-    top: 52%;
-    transform: rotate(180deg);
-    height: 136px;
-
-  }
-  .down {
-    position: absolute;
-    z-index: 10;
-       bottom: -29px;
-    right: 46%;
-    transform: rotate(90deg);
-    height: 151px;
-
-
-  }
-}
-
-
-// .page{
-//   transition: all .4s;
-//   transform: scale(1)  
-// }
-
-// .home{
-//   transition: all .6s 'ease';
-//   color:black;
-// }
 
 .fade-in {
   color: blue;

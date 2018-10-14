@@ -1,0 +1,44 @@
+.footer-section{
+    background-image: url(/static/media/footer_trees.e15f5818.png);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 24px;
+    height: 354px;
+    background-size: contain;
+    margin-top: 182px;
+    background-size: contain;
+
+  .copyright{
+    color: white;
+  }
+}
+
+
+
+.navigation-section {
+  .right {
+    position: absolute;
+    z-index: 10;
+    right: 4px;
+    top: 52%;
+    height: 136px;
+  }
+  .left {
+    position: absolute;
+    z-index: 10;
+    left: 4px;
+    top: 52%;
+    transform: rotate(180deg);
+    height: 136px;
+
+  }
+  .down {
+    position: absolute;
+    z-index: 10;
+       bottom: -29px;
+    right: 46%;
+    transform: rotate(90deg);
+    height: 151px;
+  }
+}

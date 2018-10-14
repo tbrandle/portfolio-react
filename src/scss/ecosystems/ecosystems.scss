@@ -18,6 +18,10 @@
   align-items: center;
   // transition: all 2s;
   position: relative;
+  .laptop {
+    width: 57%;
+    max-width: 536px;
+  }
   .dino{
     position: absolute;
     right: 3%;
@@ -36,7 +40,7 @@
     left: -3%;
     top: 32%;
     min-width: 304px;
-    width: 44%;
+    width: 33%;
     max-width: 400px;
   }
   .tent {
@@ -50,5 +54,6 @@
 }
 
 .first-section {
+  width: 100%;
   margin-top: 177px;
 }

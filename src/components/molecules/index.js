@@ -1,4 +1,5 @@
 import Brand from './Brand'
+import ProjectPreview from './ProjectPreview'
 import NavArrow from './NavArrow'
 import EditModelButton from './EditModelButton'
 import Pagination from './Pagination'
@@ -9,5 +10,6 @@ export {
   EditModelButton,
   Pagination,
   PageTitle,
-  NavArrow
+  NavArrow,
+  ProjectPreview
 }

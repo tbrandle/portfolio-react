@@ -2,3 +2,41 @@
   cursor: pointer;
   width: 48px;
 }
+
+.project-preview-section {
+  margin-bottom: 295px;
+  // width: 82%;
+  // margin: auto;
+  .parent-perspective {
+    padding: 15px;
+    perspective: 1000px;
+    .project-preview-img {
+      box-shadow: -4px 3px 0 black, 0 0 30px rgba(0,95,99,0.2);
+      height: 239px;
+    }
+    .project-preview-img.right{
+      transform: rotateY(19deg) rotateX(5deg);
+      
+    }
+    .project-preview-img.left{
+      transform: rotateY(-19deg) rotateX(5deg);
+    }
+  }
+  .logo-container {
+    padding: 0 16px;
+  }
+  .project-logo{
+    height: 76px;
+  }
+  .project-title {
+        font-size: 31px;
+    font-weight: 600;
+  }
+  .project-description {
+
+  }
+  .view-project {
+        padding: 9px 38px;
+    font-size: 18px;
+  }
+}
