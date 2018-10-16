@@ -1,7 +1,5 @@
 import React from 'react'
-import dino from 'images/dino.png'
-import stormTroopers from 'images/storm_troopers.png'
-
+import { dino, stormTroopers } from 'images'
 import {
   Body,
   Row,

@@ -1,8 +1,20 @@
 import React from 'react'
-import bear from 'images/bear.png'
-import tent from 'images/tent.png'
-import boldbetties from 'images/project-previews/bold-betties.png'
-import boldbettieslogo from 'images/logos/bold-betties-logo.png'
+import { bear, tent } from 'images'
+import {
+  boldBettiesLogo,
+  houndstoothLogo,
+  britebeeLogo,
+  homebotLogo,
+  asirdLogo
+} from 'images/logos'
+import {
+  asirdScreenshot,
+  boldBettiesScreenshot,
+  britebeeScreenshot,
+  britebeeScreenshot2,
+  homebotScreenshot,
+  houndstoothScreenshot
+} from 'images/project-previews'
 import {
   Body,
   Title
@@ -20,35 +32,55 @@ const Work = ({ page }) => {
         <img src={bear} alt='dinosaur' className='bear' />
         <img src={tent} alt='storm trooper' className='tent' />
       </section>
-      <section class='first-section'>
+      <section class='first-section flex-column flex-center'>
 
         <ProjectPreview
           dir='right'
           project={{
             projectName: 'Bold Betties',
             description: 'Find your adventure',
-            screenshot: boldbetties,
-            logo: boldbettieslogo
+            screenshot: boldBettiesScreenshot,
+            logo: boldBettiesLogo
           }}
         />
 
         <ProjectPreview
           dir='left'
           project={{
-            projectName: 'Bold Betties',
-            description: 'Find your adventure',
-            screenshot: boldbetties,
-            logo: boldbettieslogo
+            projectName: 'Houndstooth',
+            description: 'Real time jekyll editor',
+            screenshot: houndstoothScreenshot,
+            logo: houndstoothLogo
           }}
         />
 
         <ProjectPreview
           dir='right'
           project={{
-            projectName: 'Bold Betties',
+            projectName: 'BriteBee',
             description: 'Find your adventure',
-            screenshot: boldbetties,
-            logo: boldbettieslogo
+            screenshot: britebeeScreenshot,
+            logo: britebeeLogo
+          }}
+        />
+
+        <ProjectPreview
+          dir='left'
+          project={{
+            projectName: 'Homebot',
+            description: 'Find your adventure',
+            screenshot: homebotScreenshot,
+            logo: homebotLogo
+          }}
+        />
+
+        <ProjectPreview
+          dir='right'
+          project={{
+            projectName: 'ASIRD',
+            description: 'Find your adventure',
+            screenshot: asirdScreenshot,
+            logo: asirdLogo
           }}
         />
       </section>

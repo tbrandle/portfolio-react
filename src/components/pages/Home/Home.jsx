@@ -1,5 +1,5 @@
 import React from 'react'
-import laptop from 'images/laptop.png'
+import { laptop } from 'images'
 import {
   Body,
   Icon,

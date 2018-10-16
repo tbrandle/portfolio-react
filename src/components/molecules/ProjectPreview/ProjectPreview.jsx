@@ -1,12 +1,11 @@
 import React from 'react'
-
-import arrow from 'images/spear-arrow.svg'
+import { titleize } from '@bowtie/utils'
+import { spearArrow } from 'images'
 import { withEither } from '@bowtie/react-utils'
 import {
-  BowtieLogo,
-  Title,
   Row,
-  Col
+  Col,
+  Link
 } from 'atoms'
 
 const ProjectRight = ({ project }) => {
@@ -14,8 +13,8 @@ const ProjectRight = ({ project }) => {
   return (
     <Row className='project-preview-section'>
       <Col sm='6' className='flex-column flex-center'>
-        <div className='parent-perspective'>
-          <img src={screenshot} className='project-preview-img right' />
+        <div>
+          <img src={screenshot} className='project-preview-img  right' />
         </div>
       </Col>
       <Col sm='6' className='flex-column flex-center'>
@@ -27,15 +26,14 @@ const ProjectRight = ({ project }) => {
               <img className='project-logo' src={logo} />
             </div>
 
-            <div sm='9'>
-              <div sm='12' className='project-title'>{projectName}</div>
-
-              <div sm='12' className='project-description'>{description}</div>
+            <div>
+              <div className='project-title'>{projectName}</div>
+              <div className='project-description'>{description}</div>
             </div>
           </div>
 
           <div sm='12' className='flex center view-project'>
-              View Project  ------->
+            <Link to={`/work/${titleize(projectName, ' ', '')}`}>View Project  -------></Link>
           </div>
 
         </div>
@@ -59,23 +57,23 @@ const ProjectLeft = ({ project }) => {
               <img className='project-logo' src={logo} />
             </div>
 
-            <div sm='9'>
-              <div sm='12' className='project-title'>{projectName}</div>
+            <div>
+              <div className='project-title'>{projectName}</div>
 
-              <div sm='12' className='project-description'>{description}</div>
+              <div className='project-description'>{description}</div>
             </div>
           </div>
 
-          <div sm='12' className='flex center view-project'>
-            View Project  ------->
+          <div className='flex center view-project'>
+            <Link to={`/work/${projectName}`}>View Project  -------></Link>
           </div>
 
         </div>
 
       </Col>
       <Col sm='6' className='flex-column flex-center'>
-        <div className='parent-perspective'>
-          <img src={screenshot} className='project-preview-img left' />
+        <div >
+          <img src={screenshot} className='project-preview-img  left' />
         </div>
       </Col>
     </Row>

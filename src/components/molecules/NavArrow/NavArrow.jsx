@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-dom'
-import navRight from 'images/double-right-arrows-angles.svg'
+import { navRight } from 'images'
 import {
   Icon
 } from 'atoms'
