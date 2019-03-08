@@ -7,7 +7,7 @@ import {
 import {
   Body,
   Row,
-  Col
+  Col 
 } from 'atoms'
 
 const BriteBee = ({ page }) => {
